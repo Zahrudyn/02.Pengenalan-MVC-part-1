@@ -26,7 +26,6 @@ class Blog extends CI_Controller {
 			'artikel' => $query->result_array()
 			);
 
-		$this->load->view('main-blog');
 		$this->load->view('main-blog', $parser);
 	}
 

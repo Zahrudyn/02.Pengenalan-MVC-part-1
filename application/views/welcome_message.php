@@ -43,7 +43,7 @@
             <a class="nav-link" href="<?php echo base_url() . 'index.php/about'; ?>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url() . 'index.php/about'; ?>">Blog</a>
+            <a class="nav-link" href="<?php echo base_url() . 'index.php/blog'; ?>">Blog</a>
           </li>
         </ul>
         

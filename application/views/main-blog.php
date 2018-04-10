@@ -7,23 +7,23 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url().'assets/css1/style.css'; ?>">
   <script type="text/javascript">
     $(document).ready(function(){
-      $(window).on('scroll', (function(e) {
-        var winHeight = $(this).scrollTop();
+      // $(window).on('scroll', (function(e) {
+      //   var winHeight = $(this).scrollTop();
 
-        if(winHeight>100) {
-          $('nav.navbar').css({
-            'position': 'fixed',
-            'width': '100%',
-            'left': '0',
-            'top': '0',
-            'z-index': 99
-          });
-        } else {
-          $('nav.navbar').css({
-            'position': 'relative'
-          });
-        }
-      }));
+      //   if(winHeight>100) {
+      //     $('nav.navbar').css({
+      //       'position': 'fixed',
+      //       'width': '100%',
+      //       'left': '0',
+      //       'top': '0',
+      //       'z-index': 99
+      //     });
+      //   } else {
+      //     $('nav.navbar').css({
+      //       'position': 'relative'
+      //     });
+      //   }
+      // }));
     });
   </script>
 </head>
@@ -70,8 +70,25 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    
-    <section id="profil" class="info">
+    <div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="<?php echo base_url() . 'blog/1.jpg'; ?>" alt="1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="<?php echo base_url() . 'blog/2.jpg'; ?>" alt="2.jpg" alt="Card image cap" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>    
+    <!-- <section id="profil" class="info">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -195,7 +212,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <!-- Js -->
   <script type="text/javascript" src="<?php echo base_url().'assets/js/jquery.min.js'; ?>"></script>
