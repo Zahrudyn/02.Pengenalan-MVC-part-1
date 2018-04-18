@@ -32,11 +32,15 @@ class Crud extends CI_Controller {
 	public function add() {
 		$judul = $this->input->post('judul');
 		$isi = $this->input->post('isi');
+		$penulis = $this->input->post('penulis');
+		$email = $this->input->post('email');
 		$data = array(
 			'id' => '',
 			'judul' => $judul,
 			'isi' => $isi,
-			'tgl_post' => ''
+			'tgl_post' => '',
+			'penulis' => $penulis,
+			'email ' => $email
 		);
 
 		$this->crud_model->insert_entry('artikel', $data);

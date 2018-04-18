@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Selamat Datang di Form Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url() . 'vendor/bootstrap/css/bootstrap.min.css'; ?>" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">Admin Page</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -394,8 +394,25 @@
                                             <label>Isi</label>
                                             <textarea name="isi" class="form-control" rows="3"></textarea>
                                         </div>
+                                        <div class="form-group">
+                                            <label>Penulis</label>
+                                            <input name="penulis" class="form-control">
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input name="email" class="form-control">
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <option value="fiat" selected>Kategori</option>
+                                        <form action="/action_page.php">
+                                        <select name="cars">
+                                            <option value="volvo">Tips</option>
+                                            <option value="saab">Tehnik</option>
+                                            <option value="fiat">Umum</option>
+                                        </select>
+                                        <br><br>
                                         <button type="submit" class="btn btn-default">Submit Button</button>
-                                        <button type="reset" class="btn btn-default">Reset Button</button>
                                     </form>
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->

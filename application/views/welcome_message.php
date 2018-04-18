@@ -45,6 +45,9 @@
           <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url() . 'index.php/blog'; ?>">Blog</a>
           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url() . 'index.php/crud'; ?>">Crud</a>
+          </li>
         </ul>
         
       </div>

@@ -45,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html">Update Page</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -386,18 +386,34 @@
                                 <div class="col-lg-6">
                                     <?php foreach($artikel as $data) { ?>
                                     <form action="<?php echo base_url() . 'index.php/crud/update'; ?>" role="form" method="post">
-                                        <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
                                         <div class="form-group">
                                             <label>Judul</label>
-                                            <input name="judul" class="form-control" value="<?php echo $data['judul']; ?>">
+                                            <input name="judul" class="form-control">
                                             <p class="help-block"></p>
                                         </div>
                                         <div class="form-group">
                                             <label>Isi</label>
-                                            <textarea name="isi" class="form-control" rows="3"><?php echo $data['isi']; ?></textarea>
+                                            <textarea name="isi" class="form-control" rows="3"></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-default">Submit Button</button>
-                                        <button type="reset" class="btn btn-default">Reset Button</button>
+                                        <div class="form-group">
+                                            <label>Penulis</label>
+                                            <input name="penulis" class="form-control">
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input name="email" class="form-control">
+                                            <p class="help-block"></p>
+                                        </div>
+                                        <option value="fiat" selected>Kategori</option>
+                                        <form action="/action_page.php">
+                                        <select name="cars">
+                                            <option value="volvo">Tips</option>
+                                            <option value="saab">Tehnik</option>
+                                            <option value="fiat">Umum</option>
+                                        </select>
+                                        <br><br>
+                                        <button type="submit" class="btn btn-default">Submit Button</button>                    
                                     </form>
                                     <?php } ?>
                                 </div>
