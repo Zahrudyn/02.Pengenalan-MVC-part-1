@@ -387,7 +387,7 @@
                                     <form action="<?php echo base_url() . 'index.php/crud/add'; ?>" role="form" method="post">
                                         <div class="form-group">
                                             <label>Judul</label>
-                                            <input name="judul" class="form-control">
+                                            <input name="judul" class="form-control" placeholder="judul" minlength="5" data-fv-stringlength-message = "Minimal harus 5 karakter">
                                             <p class="help-block"></p>
                                         </div>
                                         <div class="form-group">
@@ -401,15 +401,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Email</label>
-                                            <input name="email" class="form-control">
+                                            <input name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="xyz@something.com" required>
                                             <p class="help-block"></p>
                                         </div>
                                         <option value="fiat" selected>Kategori</option>
                                         <form action="/action_page.php">
-                                        <select name="cars">
-                                            <option value="volvo">Tips</option>
-                                            <option value="saab">Tehnik</option>
-                                            <option value="fiat">Umum</option>
+                                        <select name="kategori">
+                                            <option value="tips">Tips</option>
+                                            <option value="tehnik">Tehnik</option>
+                                            <option value="umum">Umum</option>
                                         </select>
                                         <br><br>
                                         <button type="submit" class="btn btn-default">Submit Button</button>

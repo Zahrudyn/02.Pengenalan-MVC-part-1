@@ -386,9 +386,10 @@
                                 <div class="col-lg-6">
                                     <?php foreach($artikel as $data) { ?>
                                     <form action="<?php echo base_url() . 'index.php/crud/update'; ?>" role="form" method="post">
+                                        <input type="hidden" readonly="readonly" name="id" value="<?php echo $id; ?>">
                                         <div class="form-group">
                                             <label>Judul</label>
-                                            <input name="judul" class="form-control">
+                                            <input name="judul" class="form-control" placeholder="judul" minlength="5" data-fv-stringlength-message = "Minimal harus 5 karakter">
                                             <p class="help-block"></p>
                                         </div>
                                         <div class="form-group">

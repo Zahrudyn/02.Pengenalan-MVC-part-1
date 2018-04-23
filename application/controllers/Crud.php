@@ -34,13 +34,15 @@ class Crud extends CI_Controller {
 		$isi = $this->input->post('isi');
 		$penulis = $this->input->post('penulis');
 		$email = $this->input->post('email');
+		$kategori = $this->input->post('kategori');
 		$data = array(
 			'id' => '',
 			'judul' => $judul,
 			'isi' => $isi,
 			'tgl_post' => '',
 			'penulis' => $penulis,
-			'email ' => $email
+			'email ' => $email,
+			'kategori' => $kategori
 		);
 
 		$this->crud_model->insert_entry('artikel', $data);
@@ -59,6 +61,7 @@ class Crud extends CI_Controller {
 		$query = $this ->db->get('artikel');
 
 		$parser = array (
+			'id' => $id,
 			'artikel' => $query->result_array()
 			);
 
@@ -69,11 +72,16 @@ class Crud extends CI_Controller {
 		$id = $this->input->post('id');
 		$judul = $this->input->post('judul');
 		$isi = $this->input->post('isi');
+		$penulis = $this->input->post('penulis');
+		$email = $this->input->post('email');
+		$kategori = $this->input->post('kategori');
 		$data = array(
 			'id' => $id,
 			'judul' => $judul,
 			'isi' => $isi,
-			'tgl_post' => ''
+			'penulis' => $penulis,
+			'email' => $email,
+			'kategori' => $kategori
 		);
 
 		$this->crud_model->update_entry('artikel', $data, $id);
