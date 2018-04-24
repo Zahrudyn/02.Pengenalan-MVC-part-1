@@ -401,12 +401,13 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Email</label>
-                                            <input name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="xyz@something.com" required>
+                                            <input name="email" placeholder="xyz@something.com" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="xyz@something.com" required>
                                             <p class="help-block"></p>
                                         </div>
                                         <option value="fiat" selected>Kategori</option>
                                         <form action="/action_page.php">
                                         <select name="kategori">
+                                            <option value=" ">Pilih Kategori</option>
                                             <option value="tips">Tips</option>
                                             <option value="tehnik">Tehnik</option>
                                             <option value="umum">Umum</option>
